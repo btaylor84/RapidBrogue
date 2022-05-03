@@ -353,11 +353,12 @@ void titleMenu() {
     buttons[b].hotkey[1] = 'H';
     b++;
 
-    initializeButton(&(buttons[b]));
-    sprintf(buttons[b].text, "        %sQ%suit        ", goldColorEscape, whiteColorEscape);
-    buttons[b].hotkey[0] = 'q';
-    buttons[b].hotkey[1] = 'Q';
-    b++;
+// BT: for iPad release, no Quit option
+//    initializeButton(&(buttons[b]));
+//    sprintf(buttons[b].text, "        %sQ%suit        ", goldColorEscape, whiteColorEscape);
+//    buttons[b].hotkey[0] = 'q';
+//    buttons[b].hotkey[1] = 'Q';
+//    b++;
 
     x = COLS - 1 - 20 - 2;
     y = ROWS - 1;
