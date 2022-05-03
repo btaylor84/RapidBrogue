@@ -1,5 +1,5 @@
 /*
- *  Buttons.c
+ *  MainMenu.c
  *  Brogue
  *
  *  Created by Brian Walker on 1/14/12.
@@ -25,6 +25,8 @@
 #include "IncludeGlobals.h"
 #include <time.h>
 #include <limits.h>
+
+#define RAPID_BROGUE
 
 #define MENU_FLAME_PRECISION_FACTOR     10
 #define MENU_FLAME_RISE_SPEED           50
@@ -173,7 +175,7 @@ void antiAlias(unsigned char mask[COLS][ROWS]) {
 
 #define MENU_TITLE_WIDTH    74
 #ifdef RAPID_BROGUE
-#define MENU_TITLE_HEIGHT   25
+#define MENU_TITLE_HEIGHT   21
 #else
 #define MENU_TITLE_HEIGHT   19
 #endif
@@ -203,15 +205,11 @@ void initializeMenuFlames(boolean includeTitle,
         "########   ####    ###    ######         #####        ######     #########",
         "                            ##                                            ",
         "                        ##########                                        ",
-        "                            ##                                            ",
-        "                            ##                                            ",
-        "                           ####                                           ",
-        "                                                                          ",
-        "                           ######   #####  ######  ## ######              ",
-        "                           ##   ## ##   ## ##   ## ## ##   ##             ",
-        "                           ######  ####### ######  ## ##   ##             ",
-        "                           ##   ## ##   ## ##      ## ##   ##             ",
-        "                           ##   ## ##   ## ##      ## ######              "
+        "                            ##        ######   #####  ######  ## ######   ",
+        "                            ##        ##   ## ##   ## ##   ## ## ##   ##  ",
+        "                           ####       ######  ####### ######  ## ##   ##  ",
+        "                                      ##   ## ##   ## ##      ## ##   ##  ",
+        "                                      ##   ## ##   ## ##      ## ######   "
     };
 #else
 const char title[MENU_TITLE_HEIGHT][MENU_TITLE_WIDTH+1] = {
