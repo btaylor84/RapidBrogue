@@ -29,6 +29,9 @@
 #include "PlatformDefines.h"
 
 #define BROGUE_EXTRA_VERSION "-iPad"
+#define RAPID_BROGUE
+
+
 #ifndef BROGUE_EXTRA_VERSION
 #error "The BROGUE_EXTRA_VERSION macro is undefined."
 #endif

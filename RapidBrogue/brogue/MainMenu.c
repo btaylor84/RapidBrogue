@@ -26,8 +26,6 @@
 #include <time.h>
 #include <limits.h>
 
-#define RAPID_BROGUE
-
 #define MENU_FLAME_PRECISION_FACTOR     10
 #define MENU_FLAME_RISE_SPEED           50
 #define MENU_FLAME_SPREAD_SPEED         20

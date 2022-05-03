@@ -985,33 +985,18 @@ void gameOver(char *killedBy, boolean useCustomPhrasing) {
             rogue.playbackMode = false;
         }
         strcpy(buf, "You die...");
-        if (KEYBOARD_LABELS) {
-            encodeMessageColor(buf, strlen(buf), &gray);
-            strcat(buf, " (press 'i' to view your inventory)");
-        }
+
         player.currentHP = 0; // So it shows up empty in the side bar.
         refreshSideBar(-1, -1, false);
         messageWithColor(buf, &badMessageColor, 0);
-        displayMoreSignWithoutWaitingForAcknowledgment();
-
-        do {
-            if (rogue.playbackMode) break;
-            nextBrogueEvent(&theEvent, false, false, false);
-            if (theEvent.eventType == KEYSTROKE
-                && theEvent.param1 != ACKNOWLEDGE_KEY
-                && theEvent.param1 != ESCAPE_KEY
-                && theEvent.param1 != INVENTORY_KEY) {
-
-                flashTemporaryAlert(" -- Press space or click to continue, or press 'i' to view inventory -- ", 1500);
-            } else if (theEvent.eventType == KEYSTROKE && theEvent.param1 == INVENTORY_KEY) {
+        if (confirm("Do you want your possessions identified?", false)) {
                 for (theItem = packItems->nextItem; theItem != NULL; theItem = theItem->nextItem) {
                     identify(theItem);
                     theItem->flags &= ~ITEM_MAGIC_DETECTED;
                 }
                 displayInventory(ALL_ITEMS, 0, 0, true, false);
             }
-        } while (!(theEvent.eventType == KEYSTROKE && (theEvent.param1 == ACKNOWLEDGE_KEY || theEvent.param1 == ESCAPE_KEY)
-                   || theEvent.eventType == MOUSE_UP));
+
 
         confirmMessages();
 
