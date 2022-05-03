@@ -7,23 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C425ACED2820E30D008AC710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425ACEC2820E30D008AC710 /* AppDelegate.swift */; };
-		C425ACEF2820E30D008AC710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425ACEE2820E30D008AC710 /* SceneDelegate.swift */; };
-		C425ACF12820E30D008AC710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425ACF02820E30D008AC710 /* ViewController.swift */; };
-		C425ACF42820E30D008AC710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C425ACF22820E30D008AC710 /* Main.storyboard */; };
-		C425ACF62820E30E008AC710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C425ACF52820E30E008AC710 /* Assets.xcassets */; };
-		C425ACF92820E30E008AC710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C425ACF72820E30E008AC710 /* LaunchScreen.storyboard */; };
+		C425AD0C2820E34A008AC710 /* RogueScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425AD012820E34A008AC710 /* RogueScene.swift */; };
+		C425AD0D2820E34A008AC710 /* BrogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425AD022820E34A008AC710 /* BrogueViewController.swift */; };
+		C425AD0E2820E34A008AC710 /* RogueDriver.mm in Sources */ = {isa = PBXBuildFile; fileRef = C425AD032820E34A008AC710 /* RogueDriver.mm */; };
+		C425AD0F2820E34A008AC710 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425AD042820E34A008AC710 /* Cell.swift */; };
+		C425AD102820E34A008AC710 /* RogueMain.mm in Sources */ = {isa = PBXBuildFile; fileRef = C425AD052820E34A008AC710 /* RogueMain.mm */; };
+		C425AD112820E34A008AC710 /* SKViewPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425AD082820E34A008AC710 /* SKViewPort.swift */; };
+		C425AD122820E34A008AC710 /* DirectionControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C425AD0B2820E34A008AC710 /* DirectionControlsViewController.m */; };
+		C425AD7A2820E38F008AC710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C425AD782820E38F008AC710 /* main.m */; };
+		C425AD7B2820E38F008AC710 /* BrogueCE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C425AD792820E38F008AC710 /* BrogueCE.ttf */; };
+		C425AD7F2820E3AE008AC710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C425AD7D2820E3AE008AC710 /* Main.storyboard */; };
+		C425AD802820E3AE008AC710 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C425AD7E2820E3AE008AC710 /* AppDelegate.m */; };
+		C425AD962820E3C0008AC710 /* gamecenterlogo_brogue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD822820E3C0008AC710 /* gamecenterlogo_brogue@2x.png */; };
+		C425AD972820E3C0008AC710 /* brogue_dismissbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD832820E3C0008AC710 /* brogue_dismissbutton.png */; };
+		C425AD982820E3C0008AC710 /* about_brogue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD842820E3C0008AC710 /* about_brogue@2x.png */; };
+		C425AD992820E3C0008AC710 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD852820E3C0008AC710 /* Default-Landscape~ipad.png */; };
+		C425AD9A2820E3C0008AC710 /* brogue_directionals@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD862820E3C0008AC710 /* brogue_directionals@2x.png */; };
+		C425AD9B2820E3C0008AC710 /* icon_144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD872820E3C0008AC710 /* icon_144x144.png */; };
+		C425AD9C2820E3C0008AC710 /* brogue_sproutedseed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD882820E3C0008AC710 /* brogue_sproutedseed@2x.png */; };
+		C425AD9D2820E3C0008AC710 /* brogue_dismissbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD892820E3C0008AC710 /* brogue_dismissbutton@2x.png */; };
+		C425AD9E2820E3C0008AC710 /* about_brogue.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD8A2820E3C0008AC710 /* about_brogue.png */; };
+		C425AD9F2820E3C0008AC710 /* icon_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD8B2820E3C0008AC710 /* icon_72x72.png */; };
+		C425ADA02820E3C0008AC710 /* brogue_showinventory_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD8C2820E3C0008AC710 /* brogue_showinventory_button.png */; };
+		C425ADA12820E3C0008AC710 /* brogue_escapebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD8D2820E3C0008AC710 /* brogue_escapebutton@2x.png */; };
+		C425ADA22820E3C0008AC710 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD8E2820E3C0008AC710 /* Default-Landscape@2x~ipad.png */; };
+		C425ADA32820E3C0008AC710 /* brogue_sproutedseed.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD8F2820E3C0008AC710 /* brogue_sproutedseed.png */; };
+		C425ADA42820E3C0008AC710 /* brogue_directionals.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD902820E3C0008AC710 /* brogue_directionals.png */; };
+		C425ADA52820E3C0008AC710 /* brogue_escapebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD912820E3C0008AC710 /* brogue_escapebutton.png */; };
+		C425ADA62820E3C0008AC710 /* brogue_showinventory_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD922820E3C0008AC710 /* brogue_showinventory_button@2x.png */; };
+		C425ADA72820E3C0008AC710 /* brogue_seed.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD932820E3C0008AC710 /* brogue_seed.png */; };
+		C425ADA82820E3C0008AC710 /* gamecenterlogo_brogue.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD942820E3C0008AC710 /* gamecenterlogo_brogue.png */; };
+		C425ADA92820E3C0008AC710 /* brogue_seed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C425AD952820E3C0008AC710 /* brogue_seed@2x.png */; };
+		C425ADAB2820E3DE008AC710 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C425ADAA2820E3DE008AC710 /* Images.xcassets */; };
+		C425ADC62820E718008AC710 /* PowerTables.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB22820E718008AC710 /* PowerTables.c */; };
+		C425ADC72820E718008AC710 /* Combat.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB32820E718008AC710 /* Combat.c */; };
+		C425ADC82820E718008AC710 /* Math.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB42820E718008AC710 /* Math.c */; };
+		C425ADC92820E718008AC710 /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB52820E718008AC710 /* Items.c */; };
+		C425ADCA2820E718008AC710 /* Dijkstra.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB62820E718008AC710 /* Dijkstra.c */; };
+		C425ADCB2820E718008AC710 /* IO.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB72820E718008AC710 /* IO.c */; };
+		C425ADCC2820E718008AC710 /* Buttons.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADB82820E718008AC710 /* Buttons.c */; };
+		C425ADCD2820E718008AC710 /* Monsters.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADBB2820E718008AC710 /* Monsters.c */; };
+		C425ADCE2820E718008AC710 /* MainMenu.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADBC2820E718008AC710 /* MainMenu.c */; };
+		C425ADCF2820E718008AC710 /* Movement.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADBD2820E718008AC710 /* Movement.c */; };
+		C425ADD02820E718008AC710 /* Time.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADBE2820E718008AC710 /* Time.c */; };
+		C425ADD12820E718008AC710 /* Light.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADBF2820E718008AC710 /* Light.c */; };
+		C425ADD22820E718008AC710 /* Architect.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC02820E718008AC710 /* Architect.c */; };
+		C425ADD32820E718008AC710 /* SeedCatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC12820E718008AC710 /* SeedCatalog.c */; };
+		C425ADD42820E718008AC710 /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC22820E718008AC710 /* Utilities.c */; };
+		C425ADD52820E718008AC710 /* Grid.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC32820E718008AC710 /* Grid.c */; };
+		C425ADD62820E718008AC710 /* Recordings.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC42820E718008AC710 /* Recordings.c */; };
+		C425ADD72820E718008AC710 /* Globals.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC52820E718008AC710 /* Globals.c */; };
+		C425ADDC2820E73F008AC710 /* main.c.old in Sources */ = {isa = PBXBuildFile; fileRef = C425ADD82820E73F008AC710 /* main.c.old */; };
+		C425ADDD2820E73F008AC710 /* platformdependent.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADDB2820E73F008AC710 /* platformdependent.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C425ACE92820E30D008AC710 /* RapidBrogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidBrogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C425ACEC2820E30D008AC710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C425ACEE2820E30D008AC710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C425ACF02820E30D008AC710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C425ACF32820E30D008AC710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C425ACF52820E30E008AC710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C425ACF82820E30E008AC710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C425ACFA2820E30E008AC710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C425AD012820E34A008AC710 /* RogueScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RogueScene.swift; sourceTree = "<group>"; };
+		C425AD022820E34A008AC710 /* BrogueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrogueViewController.swift; sourceTree = "<group>"; };
+		C425AD032820E34A008AC710 /* RogueDriver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RogueDriver.mm; sourceTree = "<group>"; };
+		C425AD042820E34A008AC710 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		C425AD052820E34A008AC710 /* RogueMain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RogueMain.mm; sourceTree = "<group>"; };
+		C425AD062820E34A008AC710 /* RogueDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RogueDriver.h; sourceTree = "<group>"; };
+		C425AD082820E34A008AC710 /* SKViewPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewPort.swift; sourceTree = "<group>"; };
+		C425AD0A2820E34A008AC710 /* DirectionControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionControlsViewController.h; sourceTree = "<group>"; };
+		C425AD0B2820E34A008AC710 /* DirectionControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionControlsViewController.m; sourceTree = "<group>"; };
+		C425AD782820E38F008AC710 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C425AD792820E38F008AC710 /* BrogueCE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrogueCE.ttf; sourceTree = "<group>"; };
+		C425AD7C2820E3AE008AC710 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C425AD7D2820E3AE008AC710 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C425AD7E2820E3AE008AC710 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C425AD822820E3C0008AC710 /* gamecenterlogo_brogue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gamecenterlogo_brogue@2x.png"; sourceTree = "<group>"; };
+		C425AD832820E3C0008AC710 /* brogue_dismissbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_dismissbutton.png; sourceTree = "<group>"; };
+		C425AD842820E3C0008AC710 /* about_brogue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_brogue@2x.png"; sourceTree = "<group>"; };
+		C425AD852820E3C0008AC710 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		C425AD862820E3C0008AC710 /* brogue_directionals@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_directionals@2x.png"; sourceTree = "<group>"; };
+		C425AD872820E3C0008AC710 /* icon_144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_144x144.png; sourceTree = "<group>"; };
+		C425AD882820E3C0008AC710 /* brogue_sproutedseed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_sproutedseed@2x.png"; sourceTree = "<group>"; };
+		C425AD892820E3C0008AC710 /* brogue_dismissbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_dismissbutton@2x.png"; sourceTree = "<group>"; };
+		C425AD8A2820E3C0008AC710 /* about_brogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_brogue.png; sourceTree = "<group>"; };
+		C425AD8B2820E3C0008AC710 /* icon_72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_72x72.png; sourceTree = "<group>"; };
+		C425AD8C2820E3C0008AC710 /* brogue_showinventory_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_showinventory_button.png; sourceTree = "<group>"; };
+		C425AD8D2820E3C0008AC710 /* brogue_escapebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_escapebutton@2x.png"; sourceTree = "<group>"; };
+		C425AD8E2820E3C0008AC710 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		C425AD8F2820E3C0008AC710 /* brogue_sproutedseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_sproutedseed.png; sourceTree = "<group>"; };
+		C425AD902820E3C0008AC710 /* brogue_directionals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_directionals.png; sourceTree = "<group>"; };
+		C425AD912820E3C0008AC710 /* brogue_escapebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_escapebutton.png; sourceTree = "<group>"; };
+		C425AD922820E3C0008AC710 /* brogue_showinventory_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_showinventory_button@2x.png"; sourceTree = "<group>"; };
+		C425AD932820E3C0008AC710 /* brogue_seed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brogue_seed.png; sourceTree = "<group>"; };
+		C425AD942820E3C0008AC710 /* gamecenterlogo_brogue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gamecenterlogo_brogue.png; sourceTree = "<group>"; };
+		C425AD952820E3C0008AC710 /* brogue_seed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brogue_seed@2x.png"; sourceTree = "<group>"; };
+		C425ADAA2820E3DE008AC710 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C425ADB02820E5EA008AC710 /* RapidBrogue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RapidBrogue-Bridging-Header.h"; sourceTree = "<group>"; };
+		C425ADB22820E718008AC710 /* PowerTables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PowerTables.c; sourceTree = "<group>"; };
+		C425ADB32820E718008AC710 /* Combat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Combat.c; sourceTree = "<group>"; };
+		C425ADB42820E718008AC710 /* Math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Math.c; sourceTree = "<group>"; };
+		C425ADB52820E718008AC710 /* Items.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Items.c; sourceTree = "<group>"; };
+		C425ADB62820E718008AC710 /* Dijkstra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dijkstra.c; sourceTree = "<group>"; };
+		C425ADB72820E718008AC710 /* IO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IO.c; sourceTree = "<group>"; };
+		C425ADB82820E718008AC710 /* Buttons.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Buttons.c; sourceTree = "<group>"; };
+		C425ADB92820E718008AC710 /* Rogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rogue.h; sourceTree = "<group>"; };
+		C425ADBA2820E718008AC710 /* IncludeGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncludeGlobals.h; sourceTree = "<group>"; };
+		C425ADBB2820E718008AC710 /* Monsters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Monsters.c; sourceTree = "<group>"; };
+		C425ADBC2820E718008AC710 /* MainMenu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MainMenu.c; sourceTree = "<group>"; };
+		C425ADBD2820E718008AC710 /* Movement.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Movement.c; sourceTree = "<group>"; };
+		C425ADBE2820E718008AC710 /* Time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Time.c; sourceTree = "<group>"; };
+		C425ADBF2820E718008AC710 /* Light.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Light.c; sourceTree = "<group>"; };
+		C425ADC02820E718008AC710 /* Architect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Architect.c; sourceTree = "<group>"; };
+		C425ADC12820E718008AC710 /* SeedCatalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SeedCatalog.c; sourceTree = "<group>"; };
+		C425ADC22820E718008AC710 /* Utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utilities.c; sourceTree = "<group>"; };
+		C425ADC32820E718008AC710 /* Grid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Grid.c; sourceTree = "<group>"; };
+		C425ADC42820E718008AC710 /* Recordings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Recordings.c; sourceTree = "<group>"; };
+		C425ADC52820E718008AC710 /* Globals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Globals.c; sourceTree = "<group>"; };
+		C425ADD82820E73F008AC710 /* main.c.old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.c.old; sourceTree = "<group>"; };
+		C425ADD92820E73F008AC710 /* PlatformDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefines.h; sourceTree = "<group>"; };
+		C425ADDA2820E73F008AC710 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		C425ADDB2820E73F008AC710 /* platformdependent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platformdependent.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +155,108 @@
 		C425ACEB2820E30D008AC710 /* RapidBrogue */ = {
 			isa = PBXGroup;
 			children = (
-				C425ACEC2820E30D008AC710 /* AppDelegate.swift */,
-				C425ACEE2820E30D008AC710 /* SceneDelegate.swift */,
-				C425ACF02820E30D008AC710 /* ViewController.swift */,
-				C425ACF22820E30D008AC710 /* Main.storyboard */,
-				C425ACF52820E30E008AC710 /* Assets.xcassets */,
-				C425ACF72820E30E008AC710 /* LaunchScreen.storyboard */,
-				C425ACFA2820E30E008AC710 /* Info.plist */,
+				C425ADDE2820E7CA008AC710 /* platform */,
+				C425ADB12820E718008AC710 /* brogue */,
+				C425ADAA2820E3DE008AC710 /* Images.xcassets */,
+				C425AD812820E3C0008AC710 /* Image Assets */,
+				C425AD792820E38F008AC710 /* BrogueCE.ttf */,
+				C425AD782820E38F008AC710 /* main.m */,
+				C425AD7C2820E3AE008AC710 /* AppDelegate.h */,
+				C425AD7E2820E3AE008AC710 /* AppDelegate.m */,
+				C425AD7D2820E3AE008AC710 /* Main.storyboard */,
+				C425AD002820E34A008AC710 /* PlatformCode */,
 			);
 			path = RapidBrogue;
+			sourceTree = "<group>";
+		};
+		C425AD002820E34A008AC710 /* PlatformCode */ = {
+			isa = PBXGroup;
+			children = (
+				C425AD012820E34A008AC710 /* RogueScene.swift */,
+				C425AD022820E34A008AC710 /* BrogueViewController.swift */,
+				C425AD032820E34A008AC710 /* RogueDriver.mm */,
+				C425AD042820E34A008AC710 /* Cell.swift */,
+				C425AD052820E34A008AC710 /* RogueMain.mm */,
+				C425AD062820E34A008AC710 /* RogueDriver.h */,
+				C425AD082820E34A008AC710 /* SKViewPort.swift */,
+				C425AD092820E34A008AC710 /* Directional Controls */,
+				C425ADB02820E5EA008AC710 /* RapidBrogue-Bridging-Header.h */,
+			);
+			path = PlatformCode;
+			sourceTree = "<group>";
+		};
+		C425AD092820E34A008AC710 /* Directional Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C425AD0A2820E34A008AC710 /* DirectionControlsViewController.h */,
+				C425AD0B2820E34A008AC710 /* DirectionControlsViewController.m */,
+			);
+			path = "Directional Controls";
+			sourceTree = "<group>";
+		};
+		C425AD812820E3C0008AC710 /* Image Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C425AD822820E3C0008AC710 /* gamecenterlogo_brogue@2x.png */,
+				C425AD832820E3C0008AC710 /* brogue_dismissbutton.png */,
+				C425AD842820E3C0008AC710 /* about_brogue@2x.png */,
+				C425AD852820E3C0008AC710 /* Default-Landscape~ipad.png */,
+				C425AD862820E3C0008AC710 /* brogue_directionals@2x.png */,
+				C425AD872820E3C0008AC710 /* icon_144x144.png */,
+				C425AD882820E3C0008AC710 /* brogue_sproutedseed@2x.png */,
+				C425AD892820E3C0008AC710 /* brogue_dismissbutton@2x.png */,
+				C425AD8A2820E3C0008AC710 /* about_brogue.png */,
+				C425AD8B2820E3C0008AC710 /* icon_72x72.png */,
+				C425AD8C2820E3C0008AC710 /* brogue_showinventory_button.png */,
+				C425AD8D2820E3C0008AC710 /* brogue_escapebutton@2x.png */,
+				C425AD8E2820E3C0008AC710 /* Default-Landscape@2x~ipad.png */,
+				C425AD8F2820E3C0008AC710 /* brogue_sproutedseed.png */,
+				C425AD902820E3C0008AC710 /* brogue_directionals.png */,
+				C425AD912820E3C0008AC710 /* brogue_escapebutton.png */,
+				C425AD922820E3C0008AC710 /* brogue_showinventory_button@2x.png */,
+				C425AD932820E3C0008AC710 /* brogue_seed.png */,
+				C425AD942820E3C0008AC710 /* gamecenterlogo_brogue.png */,
+				C425AD952820E3C0008AC710 /* brogue_seed@2x.png */,
+			);
+			path = "Image Assets";
+			sourceTree = "<group>";
+		};
+		C425ADB12820E718008AC710 /* brogue */ = {
+			isa = PBXGroup;
+			children = (
+				C425ADB22820E718008AC710 /* PowerTables.c */,
+				C425ADB32820E718008AC710 /* Combat.c */,
+				C425ADB42820E718008AC710 /* Math.c */,
+				C425ADB52820E718008AC710 /* Items.c */,
+				C425ADB62820E718008AC710 /* Dijkstra.c */,
+				C425ADB72820E718008AC710 /* IO.c */,
+				C425ADB82820E718008AC710 /* Buttons.c */,
+				C425ADB92820E718008AC710 /* Rogue.h */,
+				C425ADBA2820E718008AC710 /* IncludeGlobals.h */,
+				C425ADBB2820E718008AC710 /* Monsters.c */,
+				C425ADBC2820E718008AC710 /* MainMenu.c */,
+				C425ADBD2820E718008AC710 /* Movement.c */,
+				C425ADBE2820E718008AC710 /* Time.c */,
+				C425ADBF2820E718008AC710 /* Light.c */,
+				C425ADC02820E718008AC710 /* Architect.c */,
+				C425ADC12820E718008AC710 /* SeedCatalog.c */,
+				C425ADC22820E718008AC710 /* Utilities.c */,
+				C425ADC32820E718008AC710 /* Grid.c */,
+				C425ADC42820E718008AC710 /* Recordings.c */,
+				C425ADC52820E718008AC710 /* Globals.c */,
+			);
+			path = brogue;
+			sourceTree = "<group>";
+		};
+		C425ADDE2820E7CA008AC710 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				C425ADD82820E73F008AC710 /* main.c.old */,
+				C425ADDA2820E73F008AC710 /* platform.h */,
+				C425ADD92820E73F008AC710 /* PlatformDefines.h */,
+				C425ADDB2820E73F008AC710 /* platformdependent.c */,
+			);
+			path = platform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +317,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C425ACF92820E30E008AC710 /* LaunchScreen.storyboard in Resources */,
-				C425ACF62820E30E008AC710 /* Assets.xcassets in Resources */,
-				C425ACF42820E30D008AC710 /* Main.storyboard in Resources */,
+				C425AD9E2820E3C0008AC710 /* about_brogue.png in Resources */,
+				C425ADAB2820E3DE008AC710 /* Images.xcassets in Resources */,
+				C425AD992820E3C0008AC710 /* Default-Landscape~ipad.png in Resources */,
+				C425AD982820E3C0008AC710 /* about_brogue@2x.png in Resources */,
+				C425ADA92820E3C0008AC710 /* brogue_seed@2x.png in Resources */,
+				C425ADA12820E3C0008AC710 /* brogue_escapebutton@2x.png in Resources */,
+				C425ADA32820E3C0008AC710 /* brogue_sproutedseed.png in Resources */,
+				C425ADA02820E3C0008AC710 /* brogue_showinventory_button.png in Resources */,
+				C425ADA22820E3C0008AC710 /* Default-Landscape@2x~ipad.png in Resources */,
+				C425AD962820E3C0008AC710 /* gamecenterlogo_brogue@2x.png in Resources */,
+				C425AD9C2820E3C0008AC710 /* brogue_sproutedseed@2x.png in Resources */,
+				C425AD7B2820E38F008AC710 /* BrogueCE.ttf in Resources */,
+				C425AD9A2820E3C0008AC710 /* brogue_directionals@2x.png in Resources */,
+				C425ADA42820E3C0008AC710 /* brogue_directionals.png in Resources */,
+				C425ADA62820E3C0008AC710 /* brogue_showinventory_button@2x.png in Resources */,
+				C425AD9B2820E3C0008AC710 /* icon_144x144.png in Resources */,
+				C425AD9D2820E3C0008AC710 /* brogue_dismissbutton@2x.png in Resources */,
+				C425ADA52820E3C0008AC710 /* brogue_escapebutton.png in Resources */,
+				C425AD972820E3C0008AC710 /* brogue_dismissbutton.png in Resources */,
+				C425AD7F2820E3AE008AC710 /* Main.storyboard in Resources */,
+				C425ADA72820E3C0008AC710 /* brogue_seed.png in Resources */,
+				C425ADA82820E3C0008AC710 /* gamecenterlogo_brogue.png in Resources */,
+				C425AD9F2820E3C0008AC710 /* icon_72x72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +350,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C425ACF12820E30D008AC710 /* ViewController.swift in Sources */,
-				C425ACED2820E30D008AC710 /* AppDelegate.swift in Sources */,
-				C425ACEF2820E30D008AC710 /* SceneDelegate.swift in Sources */,
+				C425ADD42820E718008AC710 /* Utilities.c in Sources */,
+				C425ADD72820E718008AC710 /* Globals.c in Sources */,
+				C425ADD62820E718008AC710 /* Recordings.c in Sources */,
+				C425ADD32820E718008AC710 /* SeedCatalog.c in Sources */,
+				C425AD0E2820E34A008AC710 /* RogueDriver.mm in Sources */,
+				C425AD112820E34A008AC710 /* SKViewPort.swift in Sources */,
+				C425AD802820E3AE008AC710 /* AppDelegate.m in Sources */,
+				C425ADD52820E718008AC710 /* Grid.c in Sources */,
+				C425AD102820E34A008AC710 /* RogueMain.mm in Sources */,
+				C425AD0F2820E34A008AC710 /* Cell.swift in Sources */,
+				C425ADC82820E718008AC710 /* Math.c in Sources */,
+				C425ADC72820E718008AC710 /* Combat.c in Sources */,
+				C425ADCB2820E718008AC710 /* IO.c in Sources */,
+				C425ADCA2820E718008AC710 /* Dijkstra.c in Sources */,
+				C425ADCF2820E718008AC710 /* Movement.c in Sources */,
+				C425ADD02820E718008AC710 /* Time.c in Sources */,
+				C425ADCE2820E718008AC710 /* MainMenu.c in Sources */,
+				C425ADCC2820E718008AC710 /* Buttons.c in Sources */,
+				C425ADD22820E718008AC710 /* Architect.c in Sources */,
+				C425AD0D2820E34A008AC710 /* BrogueViewController.swift in Sources */,
+				C425ADDC2820E73F008AC710 /* main.c.old in Sources */,
+				C425AD0C2820E34A008AC710 /* RogueScene.swift in Sources */,
+				C425ADD12820E718008AC710 /* Light.c in Sources */,
+				C425ADCD2820E718008AC710 /* Monsters.c in Sources */,
+				C425AD7A2820E38F008AC710 /* main.m in Sources */,
+				C425ADC62820E718008AC710 /* PowerTables.c in Sources */,
+				C425AD122820E34A008AC710 /* DirectionControlsViewController.m in Sources */,
+				C425ADDD2820E73F008AC710 /* platformdependent.c in Sources */,
+				C425ADC92820E718008AC710 /* Items.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C425ACF22820E30D008AC710 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C425ACF32820E30D008AC710 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C425ACF72820E30E008AC710 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C425ACF82820E30E008AC710 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C425ACFB2820E30E008AC710 /* Debug */ = {
@@ -193,7 +412,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -216,12 +435,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Developer/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -253,7 +473,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -270,11 +490,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/bob/Developer/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -293,6 +514,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +543,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
