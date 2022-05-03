@@ -1,0 +1,17 @@
+//
+//  RapidBrogue-Prefix.pch
+//  RapidBrogue
+//
+//  Created by Robert Taylor on 5/3/22.
+//
+
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <RapidBrogue-Swift.h>
+#endif
+
+

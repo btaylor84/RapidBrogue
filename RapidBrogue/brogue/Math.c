@@ -1,5 +1,5 @@
 /*
- *  RogueMain.c
+ *  Math.c
  *  Brogue
  *
  *  Created by Brian Walker on 12/26/08.

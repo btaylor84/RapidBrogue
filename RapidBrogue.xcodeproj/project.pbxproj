@@ -59,6 +59,7 @@
 		C425ADD72820E718008AC710 /* Globals.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADC52820E718008AC710 /* Globals.c */; };
 		C425ADDC2820E73F008AC710 /* main.c.old in Sources */ = {isa = PBXBuildFile; fileRef = C425ADD82820E73F008AC710 /* main.c.old */; };
 		C425ADDD2820E73F008AC710 /* platformdependent.c in Sources */ = {isa = PBXBuildFile; fileRef = C425ADDB2820E73F008AC710 /* platformdependent.c */; };
+		C4D39AE8282189A600A5C26D /* RogueMain.c in Sources */ = {isa = PBXBuildFile; fileRef = C4D39AE7282189A600A5C26D /* RogueMain.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,8 @@
 		C425ADD92820E73F008AC710 /* PlatformDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefines.h; sourceTree = "<group>"; };
 		C425ADDA2820E73F008AC710 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
 		C425ADDB2820E73F008AC710 /* platformdependent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platformdependent.c; sourceTree = "<group>"; };
+		C4D39AE6282186C600A5C26D /* RapidBrogue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RapidBrogue-Prefix.pch"; sourceTree = "<group>"; };
+		C4D39AE7282189A600A5C26D /* RogueMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RogueMain.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,7 @@
 				C425AD082820E34A008AC710 /* SKViewPort.swift */,
 				C425AD092820E34A008AC710 /* Directional Controls */,
 				C425ADB02820E5EA008AC710 /* RapidBrogue-Bridging-Header.h */,
+				C4D39AE6282186C600A5C26D /* RapidBrogue-Prefix.pch */,
 			);
 			path = PlatformCode;
 			sourceTree = "<group>";
@@ -224,6 +228,7 @@
 		C425ADB12820E718008AC710 /* brogue */ = {
 			isa = PBXGroup;
 			children = (
+				C4D39AE7282189A600A5C26D /* RogueMain.c */,
 				C425ADB22820E718008AC710 /* PowerTables.c */,
 				C425ADB32820E718008AC710 /* Combat.c */,
 				C425ADB42820E718008AC710 /* Math.c */,
@@ -373,6 +378,7 @@
 				C425ADDC2820E73F008AC710 /* main.c.old in Sources */,
 				C425AD0C2820E34A008AC710 /* RogueScene.swift in Sources */,
 				C425ADD12820E718008AC710 /* Light.c in Sources */,
+				C4D39AE8282189A600A5C26D /* RogueMain.c in Sources */,
 				C425ADCD2820E718008AC710 /* Monsters.c in Sources */,
 				C425AD7A2820E38F008AC710 /* main.m in Sources */,
 				C425ADC62820E718008AC710 /* PowerTables.c in Sources */,
@@ -425,6 +431,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/bob/Developer/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -484,6 +492,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/bob/Developer/RapidBrogue/RapidBrogue/PlatformCode/RapidBrogue-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -515,8 +525,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,8 +554,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

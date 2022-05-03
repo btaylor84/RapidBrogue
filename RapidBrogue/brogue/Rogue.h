@@ -1,5 +1,5 @@
 //
-//  RogueMain.h
+//  Rogue.h
 //  Brogue
 //
 //  Created by Brian Walker on 12/26/08.
