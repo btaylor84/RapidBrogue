@@ -44,7 +44,7 @@ extension UIScreen {
         var offset: CGFloat =  0.0
         if #available(iOS 11.0, *) {
             if Thread.isMainThread {
-                offset = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+                offset = UIApplication.shared.windows.first { $0.isKeyWindow }?.safeAreaInsets.bottom ?? 0
                 kOffset = offset
             } else {
                 offset = kOffset
@@ -125,17 +125,17 @@ final class BrogueViewController: UIViewController {
     }
     @IBOutlet fileprivate weak var inputTextField: UITextField!
   //  @IBOutlet fileprivate weak var leaderBoardButton: UIButton!
-    @IBOutlet fileprivate weak var seedButton: UIButton!
+//    @IBOutlet fileprivate weak var seedButton: UIButton!
    
     @IBOutlet weak var dContainerView: UIView!
-    @objc var seedKeyDown = false
+//    @objc var seedKeyDown = false
     @objc var lastBrogueGameEvent: BrogueGameEvent = .showTitle {
         didSet {
             DispatchQueue.main.async {
                 //default visibility
                 self.escButton.isHidden = true
-                self.seedButton.isHidden = true
-                self.seedKeyDown = false
+//                self.seedButton.isHidden = true
+//                self.seedKeyDown = false
                 
                 switch self.lastBrogueGameEvent {
                 case .keyBoardInputRequired:
@@ -145,15 +145,16 @@ final class BrogueViewController: UIViewController {
                 case .showTitle, .openGameFinished:
                     self.inputTextField.resignFirstResponder()
                   //  self.leaderBoardButton.isHidden = false
-                    self.seedButton.isHidden = false
+//                    self.seedButton.isHidden = false
                     self.escButton.isHidden = true
                 case .startNewGame, .openGame, .beginOpenGame:
                  //   self.leaderBoardButton.isHidden = true
-                    self.seedButton.isHidden = true
-                    self.seedKeyDown = false
+//                    self.seedButton.isHidden = true
+//                    self.seedKeyDown = false
+                    break
                 case .messagePlayerHasDied:
-                    self.seedButton.isHidden = true
-                    self.seedKeyDown = false
+//                    self.seedButton.isHidden = true
+//                    self.seedKeyDown = false
                     break
                 case .playerHasDiedMessageAcknowledged:
                     break
@@ -233,17 +234,17 @@ extension BrogueViewController {
         inputTextField.resignFirstResponder()
     }
     
-    @IBAction func seedButtonPressed(_ sender: Any) {
-        seedKeyDown = !seedKeyDown
-        
-        if seedKeyDown {
-            let image = UIImage(named: "brogue_sproutedseed.png")
-            seedButton.setImage(image, for: .normal)
-        } else {
-            let image = UIImage(named: "brogue_seed.png")
-            seedButton.setImage(image, for: .normal)
-        }
-    }
+//    @IBAction func seedButtonPressed(_ sender: Any) {
+//        seedKeyDown = !seedKeyDown
+//
+//        if seedKeyDown {
+//            let image = UIImage(named: "brogue_sproutedseed.png")
+//            seedButton.setImage(image, for: .normal)
+//        } else {
+//            let image = UIImage(named: "brogue_seed.png")
+//            seedButton.setImage(image, for: .normal)
+//        }
+//    }
 }
 
 extension BrogueViewController {
@@ -506,7 +507,7 @@ extension BrogueViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         escButton.isHidden = true
-        seedButton.isHidden = true
+//        seedButton.isHidden = true
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
